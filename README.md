@@ -1,6 +1,7 @@
 # alerts-v2-security
 security tests
 XSS examples:
+```html
 <script>alert("XSS");</script>
 <img src="javascript:alert('XSS');">
 <svg/onload=alert('XSS')>
@@ -11,3 +12,4 @@ XSS examples:
 <img src=x:x onerror="alert('XSS')">
 <iframe src="javascript:alert('XSS');"></iframe>
 "><img src=x onerror="alert('XSS')">
+```
